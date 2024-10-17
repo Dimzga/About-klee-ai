@@ -27,14 +27,20 @@
         .animated-text {
             font-size: small;
             font-weight: bold;
-            animation: pulse 2s infinite;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            animation: slide 5s infinite;
         }
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
             }
             50% {
-                transform: scale(1.05);
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
             }
         }
     </style>
