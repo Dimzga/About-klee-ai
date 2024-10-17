@@ -24,6 +24,19 @@
             text-align: center;
             opacity: 0.9;
         }
+        .animated-text {
+            font-size: small;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
     </style>
 </head>
 <body>
@@ -40,7 +53,7 @@
 
             <h3 style="font-size: small;">Tentang KLEE-AI:</h3>
             <p style="font-size: small;">KLEE-AI adalah bot WhatsApp yang cerdas dan inovatif, dirancang untuk mempermudah interaksi pengguna dalam mendapatkan informasi dan solusi secara cepat. Dikembangkan oleh DIMZ, KLEE-AI menggunakan teknologi mutakhir dari UNEKO family untuk memberikan pengalaman interaktif yang intuitif dan menyenangkan.</p>
-            <p style="font-size: small; font-weight: bold;">KLEE BOT INI DISUPPORT OLEH UNEKO FAMILY, DAN DI JALANKAN OLEH DIMZ⚡</p>
+            <p class="animated-text">KLEE BOT INI DISUPPORT OLEH UNEKO FAMILY, DAN DI JALANKAN OLEH DIMZ⚡</p>
             
             <h3 style="font-size: small;">Kemampuan KLEE-AI:</h3>
             <ul style="font-size: small;">
