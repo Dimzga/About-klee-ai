@@ -23,14 +23,15 @@
             max-width: 800px;
             text-align: center;
             opacity: 0.9;
+            position: relative;
+            overflow: hidden; /* Mencegah teks keluar dari kontainer */
         }
         .animated-text {
             font-size: small;
             font-weight: bold;
-            overflow: hidden;
             white-space: nowrap;
-            display: inline-block;
-            animation: slide 5s infinite;
+            position: absolute; /* Memungkinkan kontrol posisi */
+            animation: slide 5s linear infinite;
         }
         @keyframes slide {
             0% {
