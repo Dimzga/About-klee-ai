@@ -24,122 +24,36 @@
             text-align: center;
             opacity: 0.9;
             position: relative;
-            overflow: hidden; /* Mencegah teks keluar dari kontainer */
+            overflow: hidden;
         }
         .animated-text {
-            font-size: large; /* Ukuran teks lebih besar */
+            font-size: large;
             font-weight: bold;
             white-space: nowrap;
-            position: absolute; /* Memungkinkan kontrol posisi */
+            position: absolute;
             animation: slide 5s linear infinite;
-            top: 20px; /* Posisi dari atas */
-            left: 0; /* Memulai dari sisi kiri */
+            top: 20px;
+            left: 0;
         }
         @keyframes slide {
-            0% {
-                transform: translateX(100%);
-            }
-            50% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
+            0% { transform: translateX(100%); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Selamat Datang di Website KLEE-AI</h1>
-            <p class="animated-text">KLEE BOT INI DISUPPORT OLEH UNEKO FAMILY, DAN DI JALANKAN OLEH DIMZ⚡</p>
-            <img src="https://media-upload.net/uploads/LsEl18SVIx4c.jpg" alt="Foto Profil" width="150" style="border-radius: 75px;">
-        </header>
-        
-        <section>
-            <h2>About KLEE-AI</h2>
-            <p style="font-size: small;"><strong>Nama:</strong> KLEE-AI</p>
-            <p style="font-size: small;"><strong>Dikembangkan oleh:</strong> DIMZ</p>
-
-            <h3 style="font-size: small;">Tentang KLEE-AI:</h3>
-            <p style="font-size: small;">KLEE-AI adalah bot WhatsApp yang cerdas dan inovatif, dirancang untuk mempermudah interaksi pengguna dalam mendapatkan informasi dan solusi secara cepat. Dikembangkan oleh DIMZ, KLEE-AI menggunakan teknologi mutakhir dari UNEKO family untuk memberikan pengalaman interaktif yang intuitif dan menyenangkan.</p>
-            
-            <h3 style="font-size: small;">Kemampuan KLEE-AI:</h3>
-            <ul style="font-size: small;">
-                <li><strong>Mencari Informasi:</strong> KLEE-AI dapat membantu Anda menemukan informasi terkait produk, layanan, dan banyak hal lainnya dengan cepat.</li>
-                <li><strong>Mengatur Jadwal:</strong> Bot ini memungkinkan Anda untuk mengatur jadwal atau pengingat, membantu Anda tetap terorganisir.</li>
-                <li><strong>Memberikan Rekomendasi:</strong> KLEE-AI dapat memberikan rekomendasi berdasarkan preferensi Anda, apakah itu untuk produk, layanan, atau aktivitas.</li>
-                <li><strong>Dukungan Pelanggan:</strong> KLEE-AI siap membantu menjawab pertanyaan atau menangani masalah yang mungkin Anda hadapi.</li>
-            </ul>
-
-            <h3 style="font-size: small;">Keunggulan KLEE-AI:</h3>
-            <ol style="font-size: small;">
-                <li><strong>Jawaban Cepat dan Akurat:</strong> KLEE-AI dirancang untuk memberikan respons yang cepat dan tepat, sehingga Anda tidak perlu menunggu lama untuk mendapatkan informasi yang dibutuhkan.</li>
-                <li><strong>Pembaruan Fitur Berkala:</strong> KLEE-AI selalu diperbarui dengan fitur-fitur terbaru untuk memastikan bahwa layanan yang diberikan tetap relevan dan bermanfaat bagi pengguna.</li>
-                <li><strong>Mudah Digunakan:</strong> Antarmuka yang sederhana dan intuitif membuat KLEE-AI mudah digunakan oleh siapa saja, tanpa memerlukan keterampilan teknis khusus.</li>
-                <li><strong>Dukungan 24/7:</strong> KLEE-AI tersedia kapan saja untuk membantu Anda, sehingga Anda bisa mendapatkan bantuan kapan pun diperlukan.</li>
-            </ol>
-
-            <h3 style="font-size: small;">Misi dan Visi:</h3>
-            <p style="font-size: small;">Misi KLEE-AI adalah untuk meningkatkan efisiensi komunikasi dan menyediakan akses informasi yang lebih baik kepada pengguna. Visi kami adalah menjadi bot asisten virtual terdepan yang mengubah cara orang berinteraksi dengan teknologi.</p>
-
-            <h3 style="font-size: small;">Hubungi Kami:</h3>
-            <p style="font-size: small;">Jika Anda memiliki pertanyaan, umpan balik, atau ingin tahu lebih lanjut tentang KLEE-AI, jangan ragu untuk menghubungi kami. Anda dapat menghubungi kami melalui <a href="https://wa.me/385950609334">WhatsApp</a> atau email yang tertera di bawah ini. Kami siap membantu Anda dengan segala kebutuhan informasi.</p>
-        </section>
-
-        <section>
-            <h2>Thumbnail</h2>
-            <img src="https://media-upload.net/uploads/Bme7lxGU5SgM.jpg" alt="Thumbnail" width="100%">
-        </section>
-
-        <footer>
-            <button <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website KLEE-AI</title>
-    <link rel="icon" href="https://link-to-your-icon.ico" type="image/x-icon">
-    <style>
-        body {
+        .pricing-plans {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: url('https://media-upload.net/uploads/Bme7lxGU5SgM.jpg') no-repeat center center fixed;
-            background-size: cover;
+            justify-content: space-around;
+            margin-top: 20px;
         }
-        .container {
-            background-color: white;
-            padding: 20px;
+        .plan {
+            background: #f8f9fa;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            text-align: center;
-            opacity: 0.9;
-            position: relative;
-            overflow: hidden; /* Mencegah teks keluar dari kontainer */
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
-        .animated-text {
-            font-size: large; /* Ukuran teks lebih besar */
-            font-weight: bold;
-            white-space: nowrap;
-            position: absolute; /* Memungkinkan kontrol posisi */
-            animation: slide 5s linear infinite;
-            top: 20px; /* Posisi dari atas */
-            left: 0; /* Memulai dari sisi kiri */
-        }
-        @keyframes slide {
-            0% {
-                transform: translateX(100%);
-            }
-            50% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
+        .plan h4 {
+            margin: 0;
         }
     </style>
 </head>
@@ -155,31 +69,51 @@
             <h2>About KLEE-AI</h2>
             <p style="font-size: small;"><strong>Nama:</strong> KLEE-AI</p>
             <p style="font-size: small;"><strong>Dikembangkan oleh:</strong> DIMZ</p>
-
             <h3 style="font-size: small;">Tentang KLEE-AI:</h3>
-            <p style="font-size: small;">KLEE-AI adalah bot WhatsApp yang cerdas dan inovatif, dirancang untuk mempermudah interaksi pengguna dalam mendapatkan informasi dan solusi secara cepat. Dikembangkan oleh DIMZ, KLEE-AI menggunakan teknologi mutakhir dari UNEKO family untuk memberikan pengalaman interaktif yang intuitif dan menyenangkan.</p>
-            
+            <p style="font-size: small;">KLEE-AI adalah bot WhatsApp yang cerdas dan inovatif, dirancang untuk mempermudah interaksi pengguna dalam mendapatkan informasi dan solusi secara cepat.</p>
+
             <h3 style="font-size: small;">Kemampuan KLEE-AI:</h3>
             <ul style="font-size: small;">
-                <li><strong>Mencari Informasi:</strong> KLEE-AI dapat membantu Anda menemukan informasi terkait produk, layanan, dan banyak hal lainnya dengan cepat.</li>
-                <li><strong>Mengatur Jadwal:</strong> Bot ini memungkinkan Anda untuk mengatur jadwal atau pengingat, membantu Anda tetap terorganisir.</li>
-                <li><strong>Memberikan Rekomendasi:</strong> KLEE-AI dapat memberikan rekomendasi berdasarkan preferensi Anda, apakah itu untuk produk, layanan, atau aktivitas.</li>
-                <li><strong>Dukungan Pelanggan:</strong> KLEE-AI siap membantu menjawab pertanyaan atau menangani masalah yang mungkin Anda hadapi.</li>
+                <li><strong>Mencari Informasi:</strong> KLEE-AI dapat membantu Anda menemukan informasi terkait produk dan layanan.</li>
+                <li><strong>Mengatur Jadwal:</strong> Bot ini memungkinkan Anda untuk mengatur jadwal atau pengingat.</li>
+                <li><strong>Memberikan Rekomendasi:</strong> KLEE-AI dapat memberikan rekomendasi berdasarkan preferensi Anda.</li>
+                <li><strong>Dukungan Pelanggan:</strong> KLEE-AI siap membantu menjawab pertanyaan atau menangani masalah.</li>
             </ul>
 
             <h3 style="font-size: small;">Keunggulan KLEE-AI:</h3>
             <ol style="font-size: small;">
-                <li><strong>Jawaban Cepat dan Akurat:</strong> KLEE-AI dirancang untuk memberikan respons yang cepat dan tepat, sehingga Anda tidak perlu menunggu lama untuk mendapatkan informasi yang dibutuhkan.</li>
-                <li><strong>Pembaruan Fitur Berkala:</strong> KLEE-AI selalu diperbarui dengan fitur-fitur terbaru untuk memastikan bahwa layanan yang diberikan tetap relevan dan bermanfaat bagi pengguna.</li>
-                <li><strong>Mudah Digunakan:</strong> Antarmuka yang sederhana dan intuitif membuat KLEE-AI mudah digunakan oleh siapa saja, tanpa memerlukan keterampilan teknis khusus.</li>
-                <li><strong>Dukungan 24/7:</strong> KLEE-AI tersedia kapan saja untuk membantu Anda, sehingga Anda bisa mendapatkan bantuan kapan pun diperlukan.</li>
+                <li><strong>Jawaban Cepat dan Akurat:</strong> Memberikan respons yang cepat dan tepat.</li>
+                <li><strong>Pembaruan Fitur Berkala:</strong> Selalu diperbarui dengan fitur-fitur terbaru.</li>
+                <li><strong>Mudah Digunakan:</strong> Antarmuka yang sederhana dan intuitif.</li>
+                <li><strong>Dukungan 24/7:</strong> Tersedia kapan saja untuk membantu Anda.</li>
             </ol>
 
             <h3 style="font-size: small;">Misi dan Visi:</h3>
-            <p style="font-size: small;">Misi KLEE-AI adalah untuk meningkatkan efisiensi komunikasi dan menyediakan akses informasi yang lebih baik kepada pengguna. Visi kami adalah menjadi bot asisten virtual terdepan yang mengubah cara orang berinteraksi dengan teknologi.</p>
+            <p style="font-size: small;">Misi KLEE-AI adalah untuk meningkatkan efisiensi komunikasi dan menyediakan akses informasi yang lebih baik kepada pengguna.</p>
 
             <h3 style="font-size: small;">Hubungi Kami:</h3>
-            <p style="font-size: small;">Jika Anda memiliki pertanyaan, umpan balik, atau ingin tahu lebih lanjut tentang KLEE-AI, jangan ragu untuk menghubungi kami. Anda dapat menghubungi kami melalui <a href="https://wa.me/385950609334">WhatsApp</a> atau email yang tertera di bawah ini. Kami siap membantu Anda dengan segala kebutuhan informasi.</p>
+            <p style="font-size: small;">Jika Anda memiliki pertanyaan, umpan balik, atau ingin tahu lebih lanjut tentang KLEE-AI, hubungi kami melalui <a href="https://wa.me/385950609334">WhatsApp</a>.</p>
+        </section>
+
+        <section>
+            <h2>Pricing Plans</h2>
+            <div class="pricing-plans">
+                <div class="plan">
+                    <h4>Basic Plan</h4>
+                    <p>Harga: Rp 100.000/bulan</p>
+                    <p>Fitur: Akses dasar, dukungan pelanggan terbatas</p>
+                </div>
+                <div class="plan">
+                    <h4>Standard Plan</h4>
+                    <p>Harga: Rp 250.000/bulan</p>
+                    <p>Fitur: Semua fitur dasar, pengaturan jadwal</p>
+                </div>
+                <div class="plan">
+                    <h4>Premium Plan</h4>
+                    <p>Harga: Rp 500.000/bulan</p>
+                    <p>Fitur: Semua fitur, dukungan penuh 24/7</p>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -189,18 +123,6 @@
 
         <footer>
             <button onclick="contact()">Kontak Kami</button>
-            <p>© Uneko family</p>
-        </footer>
-    </div>
-
-    <script>
-        function contact() {
-            window.location.href = "https://wa.me/385950609334"; // Tautan WhatsApp
-        }
-    </script>
-</body>
-</html>
-onclick="contact()">Kontak Kami</button>
             <p>© Uneko family</p>
         </footer>
     </div>
