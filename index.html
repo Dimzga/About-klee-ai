@@ -6,6 +6,7 @@
     <title>Website NAHIDA-AI</title>
     <link rel="icon" href="https://files.catbox.moe/pvaxo7.jpg" type="image/x-icon">
     <style>
+        /* General Styles */
         body {
             display: flex;
             justify-content: center;
@@ -14,6 +15,7 @@
             margin: 0;
             background: black;
             overflow: hidden;
+            font-family: Arial, sans-serif;
         }
         .background-video {
             position: fixed;
@@ -29,14 +31,16 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
+            max-width: 100%;
             text-align: center;
             opacity: 0.9;
             position: relative;
             overflow: hidden;
+            width: 90%;
+            max-width: 800px;
         }
         .animated-text {
-            font-size: large;
+            font-size: 1.5rem;
             font-weight: bold;
             white-space: nowrap;
             position: absolute;
@@ -76,6 +80,30 @@
         }
         button:hover {
             background-color: #0056b3;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .animated-text {
+                font-size: 1.2rem;
+                top: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            .pricing-plans {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .animated-text {
+                font-size: 1rem;
+            }
+            button {
+                width: 100%;
+            }
         }
     </style>
 </head>
