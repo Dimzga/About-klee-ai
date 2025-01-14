@@ -3,163 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website KLEE-AI</title>
-    <link rel="icon" href="https://files.catbox.moe/pvaxo7.jpg" type="image/x-icon">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: url('https://media-upload.net/uploads/Bme7lxGU5SgM.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            text-align: center;
-            opacity: 0.9;
-            position: relative;
-            overflow: hidden;
-        }
-        .animated-text {
-            font-size: large;
-            font-weight: bold;
-            white-space: nowrap;
-            position: absolute;
-            animation: slide 10s linear infinite;
-            top: 15px; /* Ubah dari 20px menjadi 15px */
-            left: 0;
-        }
-        @keyframes slide {
-            0% { transform: translateX(100%); }
-            50% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
-        .pricing-plans {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px; /* Space between cards */
-            margin-top: 20px;
-        }
-        .plan {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            text-align: center; /* Center align text */
-        }
-        .plan h4 {
-            margin: 0;
-        }
-        button {
-            margin-top: 10px;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Profil DIMZ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Selamat Datang di Website KLEE-AI</h1>
-            <p class="animated-text">KLEE BOT INI DISUPPORT OLEH UNEKO FAMILY, DAN DI JALANKAN OLEH DIMZ⚡</p>
-            <img src="https://media-upload.net/uploads/LsEl18SVIx4c.jpg" alt="Foto Profil" width="150" style="border-radius: 75px;">
-        </header>
-        
-        <section>
-            <h2>About KLEE-AI</h2>
-            <p style="font-size: small;"><strong>Nama:</strong> KLEE-AI <img src="https://media-upload.net/uploads/7_DtcXejyQsh.png" alt="Verifikasi" width="20"></p>
-            <p style="font-size: small;"><strong>Dikembangkan oleh:</strong> DIMZ</p>
-            <h3 style="font-size: small;">Tentang KLEE-AI:</h3>
-            <p style="font-size: small;">KLEE-AI adalah bot WhatsApp yang cerdas dan inovatif, dirancang untuk mempermudah interaksi pengguna dalam mendapatkan informasi dan solusi secara cepat.</p>
-
-            <h3 style="font-size: small;">Kemampuan KLEE-AI:</h3>
-            <ul style="font-size: small;">
-                <li><strong>Mencari Informasi:</strong> KLEE-AI dapat membantu Anda menemukan informasi terkait produk dan layanan.</li>
-                <li><strong>Mengatur Jadwal:</strong> Bot ini memungkinkan Anda untuk mengatur jadwal atau pengingat.</li>
-                <li><strong>Memberikan Rekomendasi:</strong> KLEE-AI dapat memberikan rekomendasi berdasarkan preferensi Anda.</li>
-                <li><strong>Dukungan Pelanggan:</strong> KLEE-AI siap membantu menjawab pertanyaan atau menangani masalah.</li>
-            </ul>
-
-            <h3 style="font-size: small;">Keunggulan KLEE-AI:</h3>
-            <ol style="font-size: small;">
-                <li><strong>Jawaban Cepat dan Akurat:</strong> Memberikan respons yang cepat dan tepat.</li>
-                <li><strong>Pembaruan Fitur Berkala:</strong> Selalu diperbarui dengan fitur-fitur terbaru.</li>
-                <li><strong>Mudah Digunakan:</strong> Antarmuka yang sederhana dan intuitif.</li>
-                <li><strong>Dukungan 24/7:</strong> Tersedia kapan saja untuk membantu Anda.</li>
-            </ol>
-
-            <h3 style="font-size: small;">Misi dan Visi:</h3>
-            <p style="font-size: small;">Misi KLEE-AI adalah untuk meningkatkan efisiensi komunikasi dan menyediakan akses informasi yang lebih baik kepada pengguna.</p>
-
-            <h3 style="font-size: small;">Hubungi Kami:</h3>
-            <p style="font-size: small;">Jika Anda memiliki pertanyaan, umpan balik, atau ingin tahu lebih lanjut tentang KLEE-AI, hubungi kami melalui <a href="https://wa.me/385950609334">WhatsApp</a>.</p>
-        </section>
-
-        <section>
-            <h2>Pricing Plans</h2>
-            <div class="HARGA SEWA KLEE">
-                <div class="plan">
-                    <h4>SEWA GRUB</h4>
-                    <p>Harga: Rp 10.000/bulan</p>
-                    <p>Fitur: 
-                        <span style="color: green;">✔️ Akses dasar</span><br>
-                        <span style="color: green;">✔️ 30 Hari</span><br>
-                        <span style="color: red;">❌ Dukungan penuh</span>
-                        <span style="color: red;">❌ Unlock premium</span>
-                    </p>
-                    <button onclick="contact()">Buy Now</button>
-                </div>
-                <div class="plan">
-                    <h4>SEWA GRUB</h4>
-                    <p>Harga: Rp 20.000/permanen</p>
-                    <p>Fitur: 
-                        <span style="color: green;">✔️ Semua fitur dasar</span><br>
-                        <span style="color: green;">✔️ Permanen</span><br>
-                        <span style="color: red;">❌ Unlock premium</span>
-                    </p>
-                    <button onclick="contact()">Buy Now</button>
-                </div>
-                <div class="plan">
-                    <h4>SEWA+PREMIUM</h4>
-                    <p>Harga: Rp 25.000/permanen</p>
-                    <p>Fitur: 
-                        <span style="color: green;">✔️ Semua fitur</span><br>
-                        <span style="color: green;">✔️ Dukungan penuh 24/7</span>
-                        <span style="color: green;">✔️ Permanen</span><br>
-                        <span style="color: green;">✔️ UNLOCK PREMIUM</span><br>
-                    </p>
-                    <button onclick="contact()">Buy Now</button>
-                </div>
+    <video class="background-video" autoplay loop muted>
+        <source src="https://files.catbox.moe/9dgyao.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+    <div class="container" onclick="playAudio()">
+        <div class="profile-card">
+            <img src="https://files.catbox.moe/xj4if4.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>AKU DIMZ</h1>
+            <p class="subtitle">aku jawa</p>
+            <p class="description">UNF</p>
+            <p class="quote">"Hanya seorang manusia KROCO YG HOBBY NYA NGEDIT TAPI PLEK KETIPLEK."</p>
+            <div class="nav">
+                <a href="#home">Home</a>
+                <a href="https://about-nahida-ai.vercel.app/">ABOUT NAHIDA-AI</a>
+                <a href="https://about-unf.vercel.app/">ABOUT UNEKO FAMILY</a>
             </div>
-        </section>
-
-        <section>
-            <h2>Thumbnail</h2>
-            <img src="https://media-upload.net/uploads/Bme7lxGU5SgM.jpg" alt="Thumbnail" width="100%">
-        </section>
-
+        </div>
+        <audio id="myAudio">
+            <source src="https://files.catbox.moe/n03jf1.mp3" type="audio/mp3">
+            Browser Anda tidak mendukung audio.
+        </audio>
         <footer>
-            <button onclick="contact()">Kontak Kami</button>
-            <p>© Uneko family</p>
+            <p>© 2025 DIMZ | All rights reserved.</p>
         </footer>
     </div>
 
     <script>
-        function contact() {
-            window.location.href = "https://wa.me/385950609334"; // Tautan WhatsApp
+        function playAudio() {
+            const audio = document.getElementById('myAudio');
+            if (audio.paused) {
+                audio.play().catch(error => console.error("Audio gagal diputar:", error));
+            }
         }
     </script>
 </body>
