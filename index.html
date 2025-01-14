@@ -26,9 +26,10 @@
             height: 100%;
             object-fit: cover;
             z-index: -1; /* Make sure it's behind content */
+            opacity: 0.4; /* Kurangi opacity untuk memperjelas konten */
         }
         .container {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8); /* Opacity rendah agar video tetap terlihat */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -43,7 +44,7 @@
             margin-top: 10vh; /* Give some margin from top for better layout */
         }
         .animated-text {
-            font-size: 1.5rem;
+            font-size: 1.2rem; /* Ukuran teks lebih kecil */
             font-weight: bold;
             white-space: nowrap;
             position: absolute;
@@ -65,7 +66,7 @@
         .plan {
             background: #f8f9fa;
             border-radius: 10px;
-            padding: 20px;
+            padding: 15px; /* Padding dikurangi agar lebih kecil */
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
@@ -74,7 +75,7 @@
         }
         button {
             margin-top: 10px;
-            padding: 10px 15px;
+            padding: 8px 12px; /* Ukuran tombol lebih kecil */
             border: none;
             border-radius: 5px;
             background-color: #007bff;
@@ -88,7 +89,7 @@
         /* Media Queries for Mobile Responsiveness */
         @media (max-width: 768px) {
             .animated-text {
-                font-size: 1.2rem;
+                font-size: 1rem; /* Ukuran teks lebih kecil */
                 top: 10px;
             }
             .container {
@@ -102,7 +103,7 @@
         
         @media (max-width: 480px) {
             .animated-text {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             button {
                 width: 100%;
@@ -202,21 +203,10 @@
         </footer>
     </div>
 
-    <audio id="myAudio">
-        <source src="https://files.catbox.moe/n03jf1.mp3" type="audio/mp3">
-        Browser Anda tidak mendukung audio.
-    </audio>
-
     <script>
         function contact() {
             window.location.href = "https://wa.me/6283894556422"; // Tautan WhatsApp
         }
-
-        // Play audio automatically on page load
-        window.onload = function() {
-            const audio = document.getElementById('myAudio');
-            audio.play().catch(error => console.error("Audio gagal diputar:", error));
-        };
     </script>
 </body>
 </html>
