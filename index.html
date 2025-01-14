@@ -10,12 +10,13 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             min-height: 100vh;
             margin: 0;
             background: black;
-            overflow: hidden;
             font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Ensure no horizontal scroll */
+            flex-direction: column; /* Allow vertical flow */
         }
         .background-video {
             position: fixed;
@@ -35,9 +36,11 @@
             text-align: center;
             opacity: 0.9;
             position: relative;
-            overflow: hidden;
+            overflow-y: auto; /* Enable vertical scrolling */
             width: 90%;
             max-width: 800px;
+            max-height: 90vh; /* Prevent container from being taller than viewport */
+            margin-top: 10vh; /* Give some margin from top for better layout */
         }
         .animated-text {
             font-size: 1.5rem;
